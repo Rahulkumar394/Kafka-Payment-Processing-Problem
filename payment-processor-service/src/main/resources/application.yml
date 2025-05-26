@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/payments
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  kafka:
+    bootstrap-servers: kafka:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      transaction-id-prefix: tx-
+      acks: all
+      enable-idempotence: true
+    consumer:
+      group-id: payment-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+    listener:
+      ack-mode: record
