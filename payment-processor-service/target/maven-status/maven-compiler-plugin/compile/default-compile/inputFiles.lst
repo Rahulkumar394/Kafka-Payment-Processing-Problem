@@ -1,8 +1,0 @@
-/home/dev/eclipse-workspace/payment-pro-serv/payment-processor-service/src/main/java/com/paymentprocessor/PaymentProcessorServiceApplication.java
-/home/dev/eclipse-workspace/payment-pro-serv/payment-processor-service/src/main/java/com/paymentprocessor/consumer/KafkaPaymentConsumer.java
-/home/dev/eclipse-workspace/payment-pro-serv/payment-processor-service/src/main/java/com/paymentprocessor/controller/PaymentController.java
-/home/dev/eclipse-workspace/payment-pro-serv/payment-processor-service/src/main/java/com/paymentprocessor/dto/PaymentRequestDto.java
-/home/dev/eclipse-workspace/payment-pro-serv/payment-processor-service/src/main/java/com/paymentprocessor/entity/Payment.java
-/home/dev/eclipse-workspace/payment-pro-serv/payment-processor-service/src/main/java/com/paymentprocessor/producer/KafkaPaymentProducer.java
-/home/dev/eclipse-workspace/payment-pro-serv/payment-processor-service/src/main/java/com/paymentprocessor/repository/PaymentRepository.java
-/home/dev/eclipse-workspace/payment-pro-serv/payment-processor-service/src/main/java/com/paymentprocessor/service/PaymentService.java
